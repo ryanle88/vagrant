@@ -30,7 +30,7 @@ mysql -u root -e "SHOW DATABASES";
 
 # Download Starter Content
 cd /vagrant
-sudo -u vagrant wget -q https://raw.githubusercontent.com/ryanle88/vagrant/master/files/index.html
-sudo -u vagrant wget -q https://raw.githubusercontent.com/ryanle88/vagrant/master/files/info.php
+sudo -u vagrant wget -q https://raw.githubusercontent.com/ryanle88/vagrant/master/files/index.html --no-check-certificate
+sudo -u vagrant wget -q https://raw.githubusercontent.com/ryanle88/vagrant/master/files/info.php --no-check-certificate
 
 service httpd restart
